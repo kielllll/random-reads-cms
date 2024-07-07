@@ -8,9 +8,9 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'Code Gap',
+  title: process.env.SANITY_STUDIO_PROJECT_NAME || '',
 
-  projectId: 'y4vzfgmx',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID || '',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool(), ...(isDev ? devOnlyPlugins : [])],
@@ -19,4 +19,3 @@ export default defineConfig({
     types: schemaTypes,
   },
 })
-
