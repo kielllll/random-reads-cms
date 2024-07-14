@@ -33,6 +33,11 @@ const post = {
       title: 'Preview',
       type: 'image',
     },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+    },
   ],
   preview: {
     select: {
