@@ -28,6 +28,11 @@ const post = {
         },
       ],
     },
+    {
+      name: 'preview',
+      title: 'Preview',
+      type: 'image',
+    },
   ],
   preview: {
     select: {
